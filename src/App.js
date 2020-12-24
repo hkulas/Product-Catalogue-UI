@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './App.css';
+import Accessories from './components/accessories/Accessories';
+import Clothing from './components/clothing/Clothing';
+import MainNav from './components/nav/MainNav';
+import Shoes from './components/shoes/Shoes';
+import Routings from './components/constants/routings';
+import Home from './components/home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Route path="/" component={MainNav} />
+      <Route path={Routings.HOME} component={Home} />
+      <Route path={Routings.CLOTHING} component={Clothing} />
+      <Route path={Routings.ACCESSORIES} component={Accessories} />
+      <Route path={Routings.SHOES} component={Shoes} />
+    </Router>
   );
 }
 
