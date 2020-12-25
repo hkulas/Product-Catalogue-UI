@@ -1,10 +1,9 @@
 import React from 'react';
+import Clothes from '../products/Clothes';
 
 function Clothing() {
     return (
-        <div>
-            Clothing
-        </div>
+        <Clothes />
     );
 }
 

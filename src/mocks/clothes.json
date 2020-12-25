@@ -1,0 +1,53 @@
+{
+    "clothes": [{
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }, {
+        "photo_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+        "category": "t-shirts",
+        "manufacturer": "Producent",
+        "name": "Nazwa produktu"
+    }
+]}
