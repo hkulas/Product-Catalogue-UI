@@ -4,15 +4,15 @@ import useProducts from '../../hooks/useProducts';
 import Clothes from '../products/Clothes';
 import SectionBreadcrumb from '../shared/SectionBreadcrumb';
 
-function Accessories() {
-    const accessories = useProducts('accessories');
+function Belts() {
+    const belts = useProducts('belts');
 
     return (
         <>
-            <SectionBreadcrumb breadcrumbs={["Akcesoria"]} links={[Routings.ACCESSORIES]} />
-            <Clothes products={accessories} />
+            <SectionBreadcrumb breadcrumbs={["Akcesoria", "Paski"]} links={[Routings.ACCESSORIES, Routings.BELTS]} />
+            <Clothes products={belts} />
         </>
     );
 }
 
-export default Accessories;
+export default Belts;

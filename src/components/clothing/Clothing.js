@@ -1,24 +1,16 @@
-import React, { useEffect } from 'react';
-import { getClothes } from '../../api/getClothes';
+import React from 'react';
+import Routings from '../../constants/routings';
+import useProducts from '../../hooks/useProducts';
 import Clothes from '../products/Clothes';
-import SectionHeader from '../shared/SectionHeader';
+import SectionBreadcrumb from '../shared/SectionBreadcrumb';
 
 function Clothing() {
-
-    useEffect(() => {
-        const fetchData = async () => {
-            await getClothes('clothing').then(res => {
-                console.log(res.data)
-            })
-        }
-
-        fetchData();
-    }, []);
+    const clothes = useProducts('clothing');
 
     return (
         <>
-            <SectionHeader title='Odzież' />
-            <Clothes />
+            <SectionBreadcrumb breadcrumbs={["Odzież"]} links={[Routings.CLOTHING]} />
+            <Clothes products={clothes} />
         </>
     );
 }

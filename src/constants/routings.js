@@ -3,19 +3,22 @@ class Routings {
     static CLOTHING = '/clothing'
     static SHOES = '/shoes'
     static HOME = '/home'
-    static T_SHIRTS = '/tshirts'
-    static HOODIES = '/hoodies'
-    static TROUSERS = '/trousers'
-    static SHIRTS = '/tshirts'
-    static UNDERWEAR = '/underwear'
-    static SPORT_SHOES = '/sport'
-    static ELEGANT_SHOES = '/elegant'
-    static BOOTS = '/boots'
-    static FLIP_FLOPS = '/flipFlops'
-    static BACKPACKS = '/backpacks'
-    static HATS = '/hats'
-    static WATCHES = '/watches'
-    static BELTS = '/belts'
+
+    static T_SHIRTS = Routings.CLOTHING + '/tshirts'
+    static HOODIES = Routings.CLOTHING + '/hoodies'
+    static TROUSERS = Routings.CLOTHING + '/trousers'
+    static SHIRTS = Routings.CLOTHING + '/shirts'
+    static UNDERWEAR = Routings.CLOTHING + '/underwear'
+
+    static SPORT_SHOES = Routings.SHOES + '/sport'
+    static ELEGANT_SHOES = Routings.SHOES + '/elegant'
+    static BOOTS = Routings.SHOES + '/boots'
+    static FLIP_FLOPS = Routings.SHOES + '/flipFlops'
+
+    static BACKPACKS = Routings.ACCESSORIES + '/backpacks'
+    static HATS = Routings.ACCESSORIES + '/hats'
+    static WATCHES = Routings.ACCESSORIES + '/watches'
+    static BELTS = Routings.ACCESSORIES + '/belts'
 }
 
 export default Routings;

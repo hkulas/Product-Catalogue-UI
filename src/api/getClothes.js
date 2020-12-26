@@ -2,7 +2,7 @@ import axios from "axios"
 import Endpoints from "../constants/endpoints";
 
 export const getClothes = async (category) => {
-    return await axios.get(Endpoints.CLOTHING, {
+    return await axios.get(Endpoints.PRODUCT_CATEGORY, {
         params: {
           category
         }

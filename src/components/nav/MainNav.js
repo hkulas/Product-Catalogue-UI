@@ -42,23 +42,23 @@ const MainNav = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.CLOTHING + Routings.T_SHIRTS} style={inheritStyle}>Koszulki</Link>
+                        <Link to={Routings.T_SHIRTS} style={inheritStyle}>Koszulki</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.CLOTHING + Routings.HOODIES} style={inheritStyle}>Bluzy</Link>
+                        <Link to={Routings.HOODIES} style={inheritStyle}>Bluzy</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.CLOTHING + Routings.TROUSERS} style={inheritStyle}>Spodnie</Link>
+                        <Link to={Routings.TROUSERS} style={inheritStyle}>Spodnie</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.CLOTHING + Routings.SHIRTS} style={inheritStyle}>Koszule</Link>
+                        <Link to={Routings.SHIRTS} style={inheritStyle}>Koszule</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.CLOTHING + Routings.UNDERWEAR} style={inheritStyle}>Bielizna</Link>
+                        <Link to={Routings.UNDERWEAR} style={inheritStyle}>Bielizna</Link>
                     </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Obuwie" id="collasible-nav-dropdown"
@@ -71,19 +71,19 @@ const MainNav = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.SHOES + Routings.SPORT_SHOES} style={inheritStyle}>Obuwie sportowe</Link>
+                        <Link to={Routings.SPORT_SHOES} style={inheritStyle}>Obuwie sportowe</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.SHOES + Routings.BOOTS} style={inheritStyle}>Półbuty</Link>
+                        <Link to={Routings.BOOTS} style={inheritStyle}>Półbuty</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.SHOES + Routings.ELEGANT_SHOES} style={inheritStyle}>Obuwie eleganckie</Link>
+                        <Link to={Routings.ELEGANT_SHOES} style={inheritStyle}>Obuwie eleganckie</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.SHOES + Routings.FLIP_FLOPS} style={inheritStyle}>Klapi</Link>
+                        <Link to={Routings.FLIP_FLOPS} style={inheritStyle}>Klapi</Link>
                     </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Akcesoria" id="collasible-nav-dropdown"
@@ -96,19 +96,19 @@ const MainNav = () => {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.ACCESSORIES + Routings.BACKPACKS} style={inheritStyle}>Plecaki</Link>
+                        <Link to={Routings.BACKPACKS} style={inheritStyle}>Plecaki</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.ACCESSORIES + Routings.HATS} style={inheritStyle}>Czapki</Link>
+                        <Link to={Routings.HATS} style={inheritStyle}>Czapki</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.ACCESSORIES + Routings.WATCHES} style={inheritStyle}>Zegarki</Link>
+                        <Link to={Routings.WATCHES} style={inheritStyle}>Zegarki</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                        <Link to={Routings.ACCESSORIES + Routings.BELTS} style={inheritStyle}>Paski</Link>
+                        <Link to={Routings.BELTS} style={inheritStyle}>Paski</Link>
                     </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
