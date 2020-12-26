@@ -9,7 +9,7 @@ import Accessories from './components/accessories/Accessories';
 import Clothing from './components/clothing/Clothing';
 import MainNav from './components/nav/MainNav';
 import Shoes from './components/shoes/Shoes';
-import Routings from './components/constants/routings';
+import Routings from './constants/routings';
 import Home from './components/home/Home';
 
 function App() {

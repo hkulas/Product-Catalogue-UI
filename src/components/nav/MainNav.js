@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Routings from '../constants/routings';
+import Routings from '../../constants/routings';
 
 const inheritStyle = {
     color: 'inherit'
