@@ -5,7 +5,7 @@ import Clothes from '../products/Clothes';
 import SectionBreadcrumb from '../shared/SectionBreadcrumb';
 
 function Underwear(props) {
-    const underwear = useProducts('underwear');
+    const underwear = useProducts(['underwear']);
 
     return (
         <>

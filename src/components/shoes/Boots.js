@@ -5,7 +5,7 @@ import Clothes from '../products/Clothes';
 import SectionBreadcrumb from '../shared/SectionBreadcrumb';
 
 function Boots() {
-    const boots = useProducts('boots');
+    const boots = useProducts(['boots']);
 
     return (
         <>

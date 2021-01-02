@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { search } from '../../api/search';
 import Routings from '../../constants/routings';
 
 const inheritStyle = {
@@ -111,10 +112,17 @@ const MainNav = () => {
                         <Link to={Routings.BELTS} style={inheritStyle}>Paski</Link>
                     </NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link>
+                    <Link to={Routings.NEW_PRODUCT} style={inheritStyle}>Dodaj Produkt</Link>
+                </Nav.Link>
+                <Nav.Link>
+                    <Link to={Routings.NEW_SHOP} style={inheritStyle}>Dodaj Sklep</Link>
+                </Nav.Link>
             </Nav>
             
-            <Form inline onSubmit={(event) => {
+            <Form inline onSubmit={async (event) => {
                 event.preventDefault();
+                await search(searchText).then((res) => console.log(res.data))
                 console.log('Request do bazy z wyszukaniem produktu: ' + searchText);
             }}>
                 <FormControl 
@@ -124,7 +132,7 @@ const MainNav = () => {
                     onChange={(newValue) => setSearchText(newValue.target.value)} 
                     className="mr-sm-2"
                 />
-                <Button variant="outline-info">Szukaj</Button>
+                <Button variant="outline-info" type='submit'>Szukaj</Button>
             </Form>
         </Navbar>
     )

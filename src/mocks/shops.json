@@ -1,0 +1,31 @@
+{
+    "shops": [{
+        "id": "Nazwa sklepu",
+        "address": "Wojska Polskiego 11, Szczecin",
+        "location": [
+            0,
+            0
+        ]
+    }, {
+        "id": "Nazwa sklepu",
+        "address": "Wojska Polskiego 13, Szczecin",
+        "location": [
+            1,
+            1
+        ]
+    }, {
+        "id": "Nazwa sklepu",
+        "address": "Wojska Polskiego 15, Szczecin",
+        "location": [
+            0,
+            0
+        ]
+    }, {
+        "id": "Nazwa sklepu",
+        "address": "Wojska Polskiego 17, Szczecin",
+        "location": [
+            0,
+            0
+        ]
+    }]
+}

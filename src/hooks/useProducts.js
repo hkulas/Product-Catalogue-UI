@@ -2,12 +2,13 @@
 import { useState, useEffect } from 'react';
 import { getClothes } from '../api/getClothes';
 
-function useProducts(category) {
+function useProducts(categories) {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
-            await getClothes(category).then(res => {
+            console.log(categories);
+            await getClothes(categories).then(res => {
                 setProducts(res.data);
             })
         }

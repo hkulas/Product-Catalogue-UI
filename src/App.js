@@ -24,12 +24,17 @@ import Boots from './components/shoes/Boots';
 import FlipFlops from './components/shoes/FlipFlops';
 import ElegantShoes from './components/shoes/ElegantShoes';
 import SportShoes from './components/shoes/SportShoes';
+import AddProduct from './components/products/AddProduct';
+import Footer from './components/nav/Footer';
+import AddShop from './components/locateShops/AddShop';
 
 function App() {
   return (
     <Router>
       <Route path="/" component={MainNav} />
       <Route path={Routings.HOME} exact component={Home} />
+      <Route path={Routings.NEW_PRODUCT} exact component={AddProduct} />
+      <Route path={Routings.NEW_SHOP} exact component={AddShop} />
       
       <Route path={Routings.CLOTHING} exact component={Clothing} />
       <Route path={Routings.T_SHIRTS} exact component={Tshirts} />
@@ -49,6 +54,8 @@ function App() {
       <Route path={Routings.FLIP_FLOPS} exact component={FlipFlops} />
       <Route path={Routings.ELEGANT_SHOES} exact component={ElegantShoes} />
       <Route path={Routings.SPORT_SHOES} exact component={SportShoes} />
+      
+      <Route path="/" component={Footer} />
     </Router>
   );
 }
