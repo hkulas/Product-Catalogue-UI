@@ -6,6 +6,10 @@ class Routings {
     static NEW_PRODUCT = '/newProduct'
     static NEW_SHOP = '/newShop'
 
+    static ITEM = '/item/'
+
+    static SEARCH_RESULTS = '/searchResults'
+
     static T_SHIRTS = Routings.CLOTHING + '/tshirts'
     static HOODIES = Routings.CLOTHING + '/hoodies'
     static TROUSERS = Routings.CLOTHING + '/trousers'

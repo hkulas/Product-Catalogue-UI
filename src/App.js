@@ -27,6 +27,8 @@ import SportShoes from './components/shoes/SportShoes';
 import AddProduct from './components/products/AddProduct';
 import Footer from './components/nav/Footer';
 import AddShop from './components/locateShops/AddShop';
+import SingleItem from './components/clothing/SingleItem';
+import SearchResults from './components/clothing/SearchResults';
 
 function App() {
   return (
@@ -36,6 +38,9 @@ function App() {
       <Route path={Routings.NEW_PRODUCT} exact component={AddProduct} />
       <Route path={Routings.NEW_SHOP} exact component={AddShop} />
       
+      <Route path={Routings.ITEM} component={SingleItem} />
+      <Route path={Routings.SEARCH_RESULTS} component={SearchResults} />
+
       <Route path={Routings.CLOTHING} exact component={Clothing} />
       <Route path={Routings.T_SHIRTS} exact component={Tshirts} />
       <Route path={Routings.HOODIES} exact component={Hoodies} />

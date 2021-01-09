@@ -7,7 +7,6 @@ function useProducts(categories) {
 
     useEffect(() => {
         const fetchData = async () => {
-            console.log(categories);
             await getClothes(categories).then(res => {
                 setProducts(res.data);
             })

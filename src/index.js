@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Footer from './components/nav/Footer';
+
+function productReducer(state = { selectedProduct: undefined, foundProducts: [] }, action) {
+  switch (action.type) {
+    case 'SELECT_PRODUCT':
+      return { selectedProduct: action.payload }
+    case 'PRODUCTS':
+      return { foundProducts: action.payload }
+    default:
+      return state
+  }
+}
+
+let store = createStore(productReducer)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

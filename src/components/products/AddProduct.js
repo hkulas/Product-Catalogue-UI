@@ -5,7 +5,7 @@ import { createProduct } from '../../api/createProduct';
 function AddProduct(props) {
     const [name, setName] = useState('');
     const [manufacturer, setManufacturer] = useState('');
-    const [category, setCategory] = useState('');
+    const [category, setCategory] = useState('tshirt');
     const [description, setDescription] = useState('');
     const [additionalInputs, setAdditionalInputs] = useState([]);
     const [additionalTextAreas, setAdditionalTextAreas] = useState([]);
@@ -77,6 +77,16 @@ function AddProduct(props) {
         currentInputs.splice(index, 1);
         setAdditionalInputs(currentInputs);
     }
+    
+    const resetForm = () => {
+        setName('')
+        setManufacturer('')
+        setCategory('tshirt')
+        setDescription('')
+        setAdditionalInputs([])
+        setAdditionalTextAreas([])
+        setPhotoUrls([])
+    }
 
     const onFormSubmit = async (event) => {
         event.preventDefault();
@@ -92,7 +102,7 @@ function AddProduct(props) {
 
         await createProduct(name, description, category, otherParameters, photoUrls, manufacturer)
         .then(res => {
-            console.log(res)
+            resetForm();
         }).catch(err => {
             console.log(err)
         })

@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { geolocated } from 'react-geolocated';
+import { deleteShop } from '../../api/deleteShop';
 import { getNearShops } from '../../api/getNearShops';
 import ShopCard from './ShopCard';
 
 function LocateShopsModal(props) {
     const [shops, setShops] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            await getNearShops(props.coords.latitude, props.coords.longitude).then(res => {
-                setShops(res.data.content);
-            })
-        }
+    const fetchShops = async () => {
+        await getNearShops(props.coords.latitude, props.coords.longitude).then(res => {
+            setShops(res.data.content);
+        })
+    }
 
+    useEffect(() => {
         if (props.coords && props.show) {
-            fetchData();
+            fetchShops();
         }
     }, [props.coords, props.show]);
 
     return (
-        <Modal show={props.show} onHide={props.handleClose}>
+        <Modal show={props.show} onHide={props.handleClose} scrollable={true} >
             <Modal.Header closeButton>
                 <Modal.Title>Nasze sklepy</Modal.Title>
             </Modal.Header>
@@ -32,7 +33,18 @@ function LocateShopsModal(props) {
                 {shops && (
                     <>
                     {shops.slice(0, 10).map(shop => (
-                        <ShopCard name={shop.content.id} address={shop.content.address} distance={shop.distance.value} />
+                        <div className="row">
+                            <div className="col-11">
+                                <ShopCard name={shop.content.id} address={shop.content.address} distance={shop.distance.value} />
+                            </div>
+                            <div className="col-1 align-self-center">
+                                <i className="icon-trash cursor-pointer" style={{color: 'red'}} onClick={async () => {
+                                    await deleteShop(shop.content.id).then(async (res) => {
+                                        await fetchShops();
+                                    });
+                                }}></i>
+                            </div>
+                        </div>
                     ))}
                     </>
                 )}

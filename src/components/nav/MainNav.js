@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link, useHistory } from 'react-router-dom';
 import { search } from '../../api/search';
 import Routings from '../../constants/routings';
 
@@ -9,6 +10,8 @@ const inheritStyle = {
 }
 
 const MainNav = () => {
+    const dispatch = useDispatch();
+    const history = useHistory();
     const [searchText, setSearchText] = useState('');
     const [showClothingDropdown, setShowClothingDropdown] = useState(false);
     const [showShoesDropdown, setShowShoesDropdown] = useState(false);
@@ -122,7 +125,13 @@ const MainNav = () => {
             
             <Form inline onSubmit={async (event) => {
                 event.preventDefault();
-                await search(searchText).then((res) => console.log(res.data))
+                await search(searchText).then((res) => {
+                    dispatch({
+                        type: 'PRODUCTS',
+                        payload: res.data
+                    });
+                    history.push(Routings.SEARCH_RESULTS)
+                })
                 console.log('Request do bazy z wyszukaniem produktu: ' + searchText);
             }}>
                 <FormControl 

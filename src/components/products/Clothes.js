@@ -1,12 +1,11 @@
 import React from 'react';
-import * as clothes from '../../mocks/clothes.json';
 import ClothesCard from './ClothesCard';
 
 function Clothes(props) {
 
-    const ClothesComponent = (props.clothes && props.clothes.length > 1) ? props.clothes.map(item => {
+    const ClothesComponent = (props.products && props.products.length > 0) ? props.products.map(item => {
         return (
-            <ClothesCard productName={item.name} manufacturer={item.manufacturer} photoUrl={item.photo_url} />
+            <ClothesCard item={item} />
         )
     }) : null;
 
